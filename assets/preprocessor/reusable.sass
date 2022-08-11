@@ -1,0 +1,61 @@
+// Base text styles
+.section
+    width: 100vw
+    height: 100vh
+    background: #000
+    color: #fff
+    &__big-title
+        font-size: 36px
+        font-weight: 700
+        line-height: 36px
+    &__small-title
+        font-size: 25px
+        font-weight: 700
+        line-height: 28px
+    &__big-text
+        font-size: 16px
+        opacity: .8
+        letter-spacing: 0.5px
+    &__small-text
+        font-size: 15px
+        letter-spacing: 0.5px
+    @media screen and ( min-width: 1024px )
+        width: 375px
+        height: 666px
+
+// Menu 
+.header
+    position: absolute
+    top: 15px
+    left: 15px
+    z-index: 10
+.menu-btn__item
+    height: 2px
+    width: 16px
+    border-radius: 10px
+    background-color: #fff
+    margin-top: 3px
+    transition: all 1s ease-in
+    &:first-child
+        margin-top: 0
+
+// Button
+.main-button button
+    font-weight: 600
+    font-size: 12px
+    line-height: 13px
+    text-align: center
+    letter-spacing: 1.5px
+    text-transform: uppercase
+    background: rgba(35, 195, 178, 1)
+    border-radius: 5px
+    padding: 21px 57px
+    color: #fff
+    font-family: 'SF UI Display', sans-serif
+    transition: all 300ms ease-in-out
+    &:hover
+        box-shadow: 0 0 10px 0 rgba(35, 195, 178, 1) inset, 0 0 10px 4px rgba(35, 195, 178, 1)
+        background-color: rgba(0, 0, 0, 0.3)
+    &:active
+        transform: scale(0.95, 0.95)
+        background-color: rgba(35, 195, 178, 1)
